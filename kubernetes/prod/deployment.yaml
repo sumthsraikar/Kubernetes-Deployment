@@ -1,23 +1,22 @@
 kind:Deployment
-apiVersion:app/v1
+apiVersion:apps/v1
 metadata:
   name:java-app
   namespace:prod
 spec:
   replicas:1
   selector:
-    labels:
-      matchlabels:
-        app:java-app
+    matchlabels:
+      app:java-app
   template:
     metadata:
-      lables:
+      labels:
         app:java-app
     spec:
-      container:
-      -name:java-app
+      containers:
+      - name:java-app
       image:sumithsraikar:Kubernetes-Deployment-Image
-      description:"this is prod env"
+    
       ports:
-      -containerPort:80
+      -containerPort: 80
     
