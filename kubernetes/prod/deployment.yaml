@@ -4,7 +4,7 @@ metadata:
   name:java-app
   namespace: prod
 spec:
-  replicas:1
+  replicas: 1
   selector:
     matchLabels:
       app:java-app
