@@ -9,5 +9,5 @@ spec:
   type: NodePort
   ports:
   - port: 80
-  targetPort: 30003
+  targetPort: 80
   nodePort: 30080
