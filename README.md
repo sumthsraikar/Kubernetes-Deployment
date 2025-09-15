@@ -29,3 +29,18 @@ npm start
 Your project is up and running.
 
 Drop a star on this repository if you like this project.
+
+
+
+-----------------------------------------
+
+prerequisites:install docker, kubernetes and minikube
+
+1.create a Dokerfile(multi-stage build)
+
+```
+docker build -t Kubernetes-Deployment-Image .
+docker run -d -p 8080:80 Kubernetes-Deployment-Image
+#optional: 2nd command to run 
+```
+
