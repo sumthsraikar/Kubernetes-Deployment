@@ -1,12 +1,12 @@
-kind:Deployment
-apiVersion:apps/v1
+kind: Deployment
+apiVersion: apps/v1
 metadata:
   name:java-app
-  namespace:prod
+  namespace: prod
 spec:
   replicas:1
   selector:
-    matchlabels:
+    matchLabels:
       app:java-app
   template:
     metadata:
@@ -14,9 +14,9 @@ spec:
         app:java-app
     spec:
       containers:
-      - name:java-app
-      image:sumithsraikar:Kubernetes-Deployment-Image
+      - name: java-app
+      image: sumithsraikar:Kubernetes-Deployment-Image
     
       ports:
-      -containerPort: 80
+      - containerPort: 80
     
