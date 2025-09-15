@@ -32,6 +32,10 @@ Drop a star on this repository if you like this project.
 
 
 
+
+
+
+
 -----------------------------------------
 
 prerequisites:install docker, kubernetes and minikube
