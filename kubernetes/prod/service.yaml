@@ -8,6 +8,6 @@ spec:
     app:java-app
   type:NodePort
   ports:
-  -port:80
-  targetport:30003
-  nodeport:30080
+  - port: 80
+  targetPort: 30003
+  nodePort: 30080
