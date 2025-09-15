@@ -8,6 +8,6 @@ RUN npm build run
 
 # service with ngnix   
 FROM nginx:stable-alpine
-COPY /app/build /urs/share/ngnix/html
+COPY --name=builder /app/build /urs/share/nginx/html
 EXPOSE 80
 CMD ["ngnix", "-g", "demon off;"]
