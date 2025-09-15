@@ -45,6 +45,6 @@ prerequisites: Install docker, kubernetes and minikube
 ```
 docker build -t Kubernetes-Deployment-Image .
 docker run -d -p 8080:80 Kubernetes-Deployment-Image
-#optional: 2nd command to run 
+#optional: 2nd command
 ```
 
