@@ -1,1 +1,24 @@
-
+kind:deployment
+apiVersion:v1
+metadata:
+  name:
+    app:java-app
+    namespace:dev
+spec:
+  replicas:2
+  lables:
+    matchlables:
+      app:java-app
+  template:
+    metadata:
+      lables:
+        app:java-application
+    spec:
+      container:
+      -name:Kubernetes-Deployment-Image
+      image:sumithsraikar:Kubernetes-Deployment-Image
+      description:"this is simple java application"
+      ports:
+      -containerport:80
+      
+  
