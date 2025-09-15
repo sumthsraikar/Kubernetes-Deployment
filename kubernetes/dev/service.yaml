@@ -1,1 +1,13 @@
-
+kind:Service
+apiVersion:v1
+metadata:
+  name:java-app
+  namespace: dev
+spec:
+  selector:
+    app:java-app
+  type:NodePort
+  ports:
+  -port:80
+  targetport:3030
+  nodeport:30080
