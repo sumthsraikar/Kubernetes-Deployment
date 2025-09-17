@@ -12,3 +12,5 @@ spec:
       targetPort: 80  
       nodePort: 30001
       protocol: TCP
+# Question: Which type of controller is used in NodePort?
+# Answer: NodePort uses the built-in kube-proxy controller.(Reserve the port (e.g., 30001) on every node.)
