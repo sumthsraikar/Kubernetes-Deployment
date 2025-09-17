@@ -1,13 +1,13 @@
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
-  name:java-app
-  namespace:prod
+  name: java-app
+  namespace: prod
 spec:
   selector:
-    app:java-app
-  type: NodePort
+    app: java-app
+  type: LoadBalancer
   ports:
-  - port: 80
-  targetPort: 80
-  nodePort: 30080
+    - port: 80        
+      targetPort: 80  
+      protocol: TCP

@@ -1,10 +1,9 @@
-kind:Namespace
-apiVersion:v1
+kind: Namespace
+apiVersion: v1
 metadata:
-  name:dev
-
-  ---
-  kind:Namespace
-  apiVersion:v1
-  metadata:
-    name:prod
+  name: dev
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+    name: prod
